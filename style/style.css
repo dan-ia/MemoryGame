@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Righteous', sans-serif;
+    user-select: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(69, 73, 69, 0.356);
+}
+
+#gameBoard{
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;       /* ETAPA 4, preservar o 3d*/
+    transition: transform, .5s;
+}
+
+.card-back, .card-front {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.45);
+    backface-visibility: hidden;       /* ETAPA 2, esconder as classes onde tem transform:rotateY(180deg) */
+}
+
+.flip {
+    transform: rotateY(180deg);       /* ETAPA 3, aqui faz virar as duas cartas. */
+}
+
+.card-front{
+    transform:rotateY(180deg);       /*  ETAPA 1, aqui rotaciona a img da carta da frente (bootstrap)*/
+    background-color: #101c2c ;
+}
+
+.card-back {
+    background-color: #2343d1;
+    font-size: 50px;
+    color: #000000;
+    /* display: none; */
+}
+
+
+
+
+/* tela de parabéns / reiniciar -->*/
+#gameOver {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    font-size: 50px;
+    display: none;            /* aqui fica display none, e depois mudará para flex*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top:0;                   /*top 0 pra colar no inicio e ficar por cima dos cards*/
+}
+
+#restart {
+    padding: 20px;
+    font-size: 20px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* <-- tela de parabéns / reiniciar */

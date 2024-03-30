@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='style/style.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <title>Jogo da Memória</title>
+</head>
+
+<body>
+    <!--precisa de duas classes aqui pra causar o efeito flip (virar) na div card flip-->
+    <!-- poderia criar carta por carta até 20. porém farei a criação de carta pelo javaScript -->
+    <div id="gameBoard">
+        <div class="card" data-icon="bootstrap">
+            <div class="card-front">
+                <img class="icon" src="./img/bootstrap.png" alt="bootstrap">
+            </div>
+            <div class="card-back">
+                &lt/&gt
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<!-- tela de Parabéns -->
+
+
+    <div id="gameOver">
+        <div>
+            Parabéns, você completou o jogo!
+        </div>
+        <button id="restart" onclick="restart()">REINICIAR</button>
+    </div>
+
+
+    <script src="script/game.js"></script>
+    <script src="script/script - Copia.js"></script>
+    <!-- <script src="script/script.js"></script> -->
+</body>
+
+</html>
