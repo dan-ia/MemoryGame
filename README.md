@@ -19,13 +19,13 @@
 
 ### 📕 About
 
-Jogo da memória com cartões de linguagens de programação, para se divertir e se superar no tempo!
+Memory game with programming language cards, to have fun and beat yourself in time!
 
 #
 
 ### ❓ Why the app
 
-O projeto jogo da memoria foi um dos projetos de JavaScript que fiz do curso PROGRAMADAOR BR no ano de 2022.
+The memory game project was one of the JavaScript projects I did on the PROGRAMADOR BR course in 2022.
 
 #
 
