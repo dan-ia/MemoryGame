@@ -1,4 +1,3 @@
-
 <div align="center">
   <img src="./img/icon.png" widht="100px" height="100px">
 </div>
@@ -8,6 +7,12 @@
  <p>Memory Game</p>
 </h1>
 
+### 📕 About
+
+Memory game with programming language cards, to have fun and beat yourself in time!
+
+#
+
 <div align="center">
    <img width="98%" src="./img/tela1.gif">
 <div align="center">
@@ -15,11 +20,6 @@
    <img width="49%" src="./img/tela3.png">
 </div>
 </div>
-
-
-### 📕 About
-
-Memory game with programming language cards, to have fun and beat yourself in time!
 
 #
 
@@ -41,7 +41,7 @@ The memory game project was one of the JavaScript projects I did on the PROGRAMA
 
 You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.com/download/win) and [VsCode](https://code.visualstudio.com/download) installed on your computer.
 
-#### Siga o passo a passo:
+#### Follow the step by step:
 
 ````bash
     # Clone the project
@@ -49,21 +49,9 @@ You need to have [Node](https://nodejs.org/en/download), [Git](https://git-scm.c
 
     # Enter directory
     $ cd MemoryGame
-````
-````bash
-    # Install the dependencies, if use npm
-    $ npm install
-````
-<p align="center">or</p>
 
-````bash
-    # Install the dependencies, if use yarn
-    $ yarn
-````
-
-```` bash
-     # Open project in VsCode
-     code .
+    # Open project in VsCode
+    code .
 ````
 <div align="center">
 
